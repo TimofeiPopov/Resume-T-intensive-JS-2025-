@@ -1,0 +1,136 @@
+.exp-and-tools {
+    display: grid;
+    gap: 20px;
+    grid-auto-flow: column;
+    grid-template-columns: 3fr 1fr;
+    grid-auto-rows: minmax(200px, auto);
+     
+    
+    div {
+        background-color: #F0F0F0;
+        border-radius: 10px;
+    }
+
+    .tools {
+
+        padding: 20px;
+
+        .stack {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            gap: 20px;
+
+            div {
+                background-color: #ffffff;
+            }
+        }
+        
+
+        .code {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            grid-template-rows: minmax(15px, auto);
+            background-color: #ffffff;
+
+            div {
+                aspect-ratio: 1/1;
+                min-width: 30px;
+                min-height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            .htmlLogo {
+            background-image: url('/htmlLogo.png');
+            }
+
+            .js {
+            background-image: url('/jsLogo.png');
+            }
+
+            .vs {
+            background-image: url('/vsLogo.png');
+            }
+
+            .git {
+            background-image: url('/gitLogo.png');
+            }
+
+        }
+
+
+        .design {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            padding: 20px;
+            grid-template-rows: minmax(15px, auto);
+            background-color: #ffffff;
+
+            div {
+                aspect-ratio: 1/1;
+                min-width: 30px;
+                min-height: 30px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+
+            }
+
+            .figma {
+                background-image: url('/figmaLogo.png');
+            }
+
+            .meet {
+                background-image: url('/meetLogo.png');
+            }
+        }
+    }
+
+    .exp {
+        padding: 20px;
+
+        .desc {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            width: 100%;
+            gap: 20px;
+        }
+
+
+
+        .first {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding-left: 20px;
+            color: #ffffff;
+            background-color: #28D979;
+            border-radius: 10px;
+
+
+            .list {
+                padding: 20px;
+                margin: 0;
+            }
+        }
+
+        .second {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            padding-left: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+
+
+            .list {
+                padding: 20px;
+                margin: 0;
+            }
+        }
+    }
+}
