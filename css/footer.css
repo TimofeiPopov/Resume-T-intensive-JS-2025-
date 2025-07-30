@@ -20,7 +20,7 @@
             grid-template-rows: minmax(15px, auto);
 
             div {
-                padding-left: 20px;                
+                padding: 20px;                
                 min-width: 30px;
                 min-height: 30px;
                 background-size: contain;
@@ -54,5 +54,4 @@
             }
         }
     }
-
 }

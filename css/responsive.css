@@ -1,0 +1,120 @@
+/* Мобильные устройства (до 768px) */
+@media (max-width: 768px) {
+
+  body {
+    overflow: visible !important;
+    height: auto !important;
+  }    
+  /* Общие стили */
+  #app {
+    overflow: visible !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  /* Шапка */
+  .head {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  /* Фиксируем высоту карточек */
+  .head, .exp-and-tools, .end {
+    height: auto !important;
+    min-height: unset !important;
+  }  
+
+  .head > div {
+    min-height: 150px;
+  }
+
+  .photo {
+    aspect-ratio: 1/1;
+    height: auto;
+  }
+
+  /* Блок опыта и инструментов */
+  .exp-and-tools {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  /* Инструменты - сохраняем 2 ряда иконок */
+  .tools {
+    padding: 15px !important;
+  }
+
+  .stack {
+    display: grid !important;
+    grid-template-rows: auto auto !important;
+    gap: 15px !important;
+  }
+
+  .code, .design {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px !important;
+    padding: 15px !important;
+  }
+
+  .code div, .design div {
+    min-width: 30px !important;
+    min-height: 30px !important;
+    max-width: 50px;
+    max-height: 50px;
+    margin: 0 auto;
+  }
+
+  /* Футер */
+  .end {
+    grid-auto-flow: row;
+    grid-template-columns: 1fr;
+  }
+
+  /* Интересы */
+  .my-intr {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  /* Карточки опыта */
+  .first, .second {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Планшеты (769px-1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .head {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .vertical-scale {
+    grid-column: span 2;
+  }
+
+  .exp-and-tools {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .tools {
+    padding: 15px;
+  }
+
+  .code, .design {
+    gap: 15px;
+    padding: 15px;
+  }
+}
+
+/* Очень маленькие экраны (до 480px) */
+@media (max-width: 480px) {
+  .code, .design {
+    gap: 10px !important;
+    padding: 10px !important;
+  }
+
+  .code div, .design div {
+    min-width: 25px !important;
+    min-height: 25px !important;
+  }
+}
