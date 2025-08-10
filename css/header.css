@@ -48,7 +48,6 @@
         flex: 0 0 80px;
         margin-right: 10px;
         text-align: left;
-        overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
     }
