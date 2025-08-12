@@ -8,7 +8,7 @@ import { eduTextEditing } from './eduEditor.js';
 import { inteTextEditing } from './inteEditor.js';
 
 async function loadTemplate() {
-  const response = await fetch('/js/templates/resume.html');
+  const response = await fetch('./templates/resume.html');
   const html = await response.text();
   
   document.body.insertAdjacentHTML('afterbegin', html);
